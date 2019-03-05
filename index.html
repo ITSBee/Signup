@@ -3,8 +3,101 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Google注册页面</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<div class="header">
+		<a href="javascript:;">Google帐号</a>
+		<span><a class="signupBtn" href="javascript:;">登录</a></span>
+	</div>
+	<div class="main">
+		<h1>创建您的 Google 帐号</h1>
+		<div class="signModule">
+			<div class="signImg">
+				<img src="imgs/left_text.png" alt="google帐号">
+			</div>
+			<div class="signInfo">
+				<form action="">
+					<div class="element">
+						<fieldset>
+							<legend>姓名</legend>
+							<input id="familyName" type="text" placeholder="姓">
+							<input id="firstName" type="text" placeholder="名">
+						</fieldset>
+					</div>
+					<div class="element">
+						<fieldset>
+							<legend>输入密码</legend>
+							<label for="PW"></label>
+							<input class="pw" type="password" name="" placeholder="请设置密码" id="PW">
+						</fieldset>
+					</div>
+					<div class="element">
+						<fieldset>
+							<legend>确认密码</legend>
+							<label for="confirmPW"></label>
+							<input class="pw" type="password" name="" placeholder="请确认密码" id="confirmPW">
+						</fieldset>
+					</div>
+					<div class="element">
+						<fieldset>
+							<legend>生日</legend>
+							<label for="years">
+								<select name="" id="years">
+									<option value="0">1990</option>
+									<option value="1">1991</option>
+									<option value="2">1992</option>
+									<option value="3">1993</option>
+									<option value="4">1994</option>
+								</select> 年
+							</label> 
+							<label for="months">
+								<select name="" id="months">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">3</option>
+									<option value="3">4</option>
+									<option value="4">5</option>
+								</select> 月
+							</label>
+							<label for="date">
+								<select name="" id="date">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">3</option>
+									<option value="3">4</option>
+									<option value="4">5</option>
+								</select> 日
+							</label>
+						</fieldset>
+					</div>	
+					<div class="element">
+						<fieldset>
+							<legend>性别</legend>
+							<label for="male"><input type="radio" name="gender" id="male"> 男</label>
+							<label for="female"><input type="radio" name="gender" id="female"> 女</label>
+						</fieldset>
+					</div>
+					<div class="element">
+						<fieldset>
+							<legend>地区</legend>
+							<label for="distract">
+								<select name="" id="distract">
+									<option value="0">中国</option>
+									<option value="1">日本</option>
+									<option value="2">韩国</option>
+									<option value="3">朝鲜</option>
+								</select>
+							</label>
+						</fieldset>
+					</div>
+					<div class="element">
+						<input class="submitBtn" type="submit" value="下一步">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">footer</div>
 </body>
 </html>
