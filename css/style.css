@@ -2,9 +2,12 @@
 
 /* 全局样式 */
 body,
-h1 {
+h1,
+fieldset {
 	margin: 0;
 }
+fieldset,
+legend { padding: 0; }
 
 input {
 	outline: none;
@@ -24,6 +27,7 @@ body {
 }
 
 a {
+	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -59,6 +63,7 @@ a {
 	background: #4B8DF8;
 }
 
+/* main样式 */
 .main {
 	width: 910px;
 	margin: 0 auto;
@@ -77,28 +82,71 @@ a {
 	width: 410px;
 }
 
+/* signInfo */
 .signInfo {
 	float: right;
 	width: 410px;
 	margin-top: 20px;
 	margin-left: 30px;
-	padding: 20px;
+	padding: 20px 30px;
 	background: #efefef;
 }
 
-.signInfo fieldset { border: none; }
-
-.signInfo legend {
-	font-weight: bold;
+.signInfo fieldset { 
+	border: none; 
+	margin-bottom: 20px;
 }
 
-.signInfo .pw {
-	width: 100%;
+.signInfo legend { 
+	font-weight: bold; 
+	margin-bottom: 5px;
 }
-.signInfo .submitBtn {
-	float: right;
+
+.element .pw,
+.element .cPw {
+	width: 398px;
 }
+
+.element select {
+	height: 28px;
+	line-height: 28px;
+}
+
+.element .familyName,
+.element .firstName {
+	width: 189px;
+	margin-right: 8px;
+}
+
+.element .firstName { margin-right: 0; }
+
+.element .years { width: 180px; }
+
+.element .months { width: 65px; }
+
+.element .date { width: 100px; }
+
+.element .district { width: 410px; }
+
+.signInfo .submitBtn { float: right; }
 
 .footer {
-	height: 60px;
+	margin-top: 40px;
+	padding: 10px;
+	height: 24px;
+	line-height: 24px;
+	border-top: 1px solid #ccc;
+	background: #efefef;
 }
+
+.footer .bl { 
+	float: left; 
+	margin-left: 20px;
+}
+.footer .bl a { margin-right: 20px; }
+
+.footer .br { 
+	float: right; 
+	margin-right: 20px;
+}
+.footer .br a { margin-left: 20px; }

@@ -21,8 +21,7 @@
 					<div class="element">
 						<fieldset>
 							<legend>姓名</legend>
-							<input id="familyName" type="text" placeholder="姓">
-							<input id="firstName" type="text" placeholder="名">
+							<input class="familyName" id="familyName" type="text" placeholder="姓"><input class="firstName" id="firstName" type="text" placeholder="名">
 						</fieldset>
 					</div>
 					<div class="element">
@@ -43,7 +42,7 @@
 						<fieldset>
 							<legend>生日</legend>
 							<label for="years">
-								<select name="" id="years">
+								<select class="years" id="years" name="">
 									<option value="0">1990</option>
 									<option value="1">1991</option>
 									<option value="2">1992</option>
@@ -52,7 +51,7 @@
 								</select> 年
 							</label> 
 							<label for="months">
-								<select name="" id="months">
+								<select class="months" id="months" name="">
 									<option value="0">1</option>
 									<option value="1">2</option>
 									<option value="2">3</option>
@@ -61,7 +60,7 @@
 								</select> 月
 							</label>
 							<label for="date">
-								<select name="" id="date">
+								<select class="date" id="date" name="">
 									<option value="0">1</option>
 									<option value="1">2</option>
 									<option value="2">3</option>
@@ -74,15 +73,15 @@
 					<div class="element">
 						<fieldset>
 							<legend>性别</legend>
-							<label for="male"><input type="radio" name="gender" id="male"> 男</label>
-							<label for="female"><input type="radio" name="gender" id="female"> 女</label>
+							<label for="male"><input id="male" type="radio" name="gender"> 男</label>
+							<label for="female"><input id="female" type="radio" name="gender"> 女</label>
 						</fieldset>
 					</div>
 					<div class="element">
 						<fieldset>
 							<legend>地区</legend>
-							<label for="distract">
-								<select name="" id="distract">
+							<label for="district">
+								<select class="district" id="district" name="">
 									<option value="0">中国</option>
 									<option value="1">日本</option>
 									<option value="2">韩国</option>
@@ -98,6 +97,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">footer</div>
+	<div class="footer">
+		<div class="bl">
+			<a href="javascript:;">广告</a>
+			<a href="javascript:;">商务</a>
+			<a href="javascript:;">Google大全</a>
+		</div>
+		<div class="br">
+			<a href="javascript:;">帮助</a>
+			<a href="javascript:;">隐私权</a>
+			<a href="javascript:;">条款</a>
+		</div>
+	</div>
 </body>
 </html>
